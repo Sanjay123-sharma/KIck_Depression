@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KickDepression - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        aside {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+        }
+        main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .form-section {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            margin: 20px;
+        }
+        .form-section h2 {
+            margin-bottom: 15px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        button {
+            padding: 12px;
+            background: #ff4081;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #e60073;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KickDepression</h1>
+        <p>Your Path to a Happier Life</p>
+    </header>
+    
+    <aside>
+        <h2>About Us</h2>
+        <p>We help individuals overcome depression and guide youth towards a positive future. Our experienced consultants provide professional support to improve mental well-being.</p>
+    </aside>
+    
+    <main>
+        <section class="form-section">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="image">Upload Image:</label>
+                <input type="file"  name="imagefile" >
+               <button>upload</button>
+            </form>
+        </section>
+        <section class="form-section">
+            <h2>Hire a Consultant</h2>
+           
+            <form action="/create" method="post"  >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">DOB:</label>
+                <input type="text" id="age" name="age" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="mobile">Mobile:</label>
+                <input type="number" id="mobile" name="mobile" required>
+
+                
+                <button >Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Contact us at: <a href="mailto:ak8861433@gmail.com" style="color: #ff4081;">ak8861433@gmail.com</a></p>
+        <p>&copy; 2025 KickDepression. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
